@@ -1,0 +1,12 @@
+<html>
+<body>
+  <form method = 'POST' enctype = 'multipart/form-data'  {% csrf_token %}
+    <input type = 'text' name = 'first_name' placeholder = 'Your first name'></input>
+    <input type = 'text' name = 'last_name' placeholder = 'Your last name'></input>
+    <input type = 'date' name = 'date_of_birth' placeholder = 'Your date of birth'></input>
+    <input type = 'file' name = 'myfile'></input>
+    <input type = 'submit' value = 'Save'></input>
+    {{graph|safe}}
+  </form>
+</body>
+</html>
